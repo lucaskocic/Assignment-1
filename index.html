@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Registration Form</title>
+</head>
+<body>
+
+  <h1>User Registration Form</h1>
+
+  <form method="post">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="firstName" name="firstName" required placeholder="First Name"><br><br>
+
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lastName" name="lastName" required placeholder="Last Name"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required minlength="8" placeholder="Min. 8 characters"><br><br>
+
+      <label for="confirmPassword">Confirm Password:</label><br>
+      <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" placeholder="Retype password"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+      <label for="newsletter">Subscribe to Newsletter</label><br>
+
+      <input type="checkbox" id="terms" name="terms" value="agree" required>
+      <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label><br>
+    </fieldset>
+
+    <br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">-- Select Country --</option>
+      <option value="canada">Canada</option>
+      <option value="usa">United States</option>
+      <option value="uk">United Kingdom</option>
+    </select><br><br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any additional comments..."></textarea><br><br>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
